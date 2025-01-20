@@ -4,6 +4,29 @@ Effortlessly deploy Odoo 17.0 with PostgreSQL 16 and Adminer 4.8.1 using Docker.
 
 ---
 
+## **What is Odoo?**
+
+Odoo is an open-source ERP and CRM solution that provides a wide range of business applications, including accounting, inventory management, HR, and more. It is modular, highly customizable, and integrates seamlessly to support business operations of any size. 
+
+- **Website:** [Odoo Official Site](https://www.odoo.com/)
+- **Credits:**
+  - Odoo is maintained by Odoo S.A.
+  - It is distributed under the GNU Lesser General Public License (LGPL).
+
+---
+
+## **Why Neural Inverse Developed This**
+
+The Neural Inverse team created this simplified setup to:
+
+- **Streamline Deployment:** Reduce the complexity of setting up an ERP/CRM system for businesses and developers.
+- **Promote Accessibility:** Enable developers to get started with Odoo without requiring deep technical expertise.
+- **Enhance Productivity:** Provide a ready-to-use environment that developers can easily adapt and extend for their specific use cases.
+
+This project aligns with Neural Inverse's vision of empowering developers and organizations with efficient, user-friendly solutions.
+
+---
+
 ## **Requirements**
 
 - Docker container virtualization service
@@ -114,6 +137,16 @@ All containers are configured using Docker Compose for ease of deployment and ma
 
 ---
 
+## **Developer Tracking Table**
+
+| Task ID | Developer Name      | Task Description                        | Status       |
+|---------|---------------------|------------------------------------------|--------------|
+| 001     | [Your Name Here]    | Set up Docker environment               | In Progress  |
+| 002     | [Your Name Here]    | Configure PostgreSQL and Odoo containers| Completed    |
+| 003     | [Your Name Here]    | Test Odoo and Adminer accessibility     | Pending      |
+
+---
+
 ## **Customization Options**
 
 You can modify the following parameters in the `.env` file:
@@ -174,6 +207,15 @@ docker-compose down
 
 ---
 
+## **Useful Links**
+
+- [Odoo Documentation](https://www.odoo.com/documentation)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- [Adminer Official Site](https://www.adminer.org/)
+- [Docker Documentation](https://docs.docker.com/)
+
+---
+
 ## **License**
 
 This project is open source and available under the [MIT License](LICENSE).
@@ -191,4 +233,5 @@ Contributions are welcome! Feel free to submit issues or pull requests to enhanc
 - Neural Inverse Open Source Initiative
 
 Enjoy effortless ERP/CRM deployment with Odoo Simplified Setup! 🚀
+
 
