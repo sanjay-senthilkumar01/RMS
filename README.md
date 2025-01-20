@@ -4,56 +4,6 @@ Effortlessly deploy Odoo 17.0 with PostgreSQL 16 and Adminer 4.8.1 using Docker.
 
 ---
 
-## **What is Odoo?**
-
-Odoo is an open-source Enterprise Resource Planning (ERP) and Customer Relationship Management (CRM) software solution. It offers over 80 modules that cover a wide range of business needs, such as accounting, inventory management, human resources, project management, e-commerce, and more. 
-
-### **Key Features:**
-- Modular structure that allows businesses to install only the apps they need.
-- User-friendly interface with modern design.
-- Open-source platform with a vibrant developer and user community.
-- Highly customizable to fit unique business requirements.
-
-- **Website:** [Odoo Official Site](https://www.odoo.com/)
-- **Credits:**
-  - Odoo is maintained by Odoo S.A.
-  - It is distributed under the GNU Lesser General Public License (LGPL).
-
----
-
-## **Why Neural Inverse Developed This**
-
-The Neural Inverse team created this simplified setup as part of their commitment to empowering developers and businesses. Here’s why:
-
-- **Streamlined Deployment:** ERP and CRM systems often require complex setups. This project reduces the setup to a single command, making it accessible for developers of all skill levels.
-- **Accessibility:** By lowering technical barriers, Neural Inverse encourages businesses to adopt Odoo for efficient operations.
-- **Developer Empowerment:** Providing a ready-to-use, containerized environment allows developers to focus on extending functionality and innovation rather than struggling with installation issues.
-- **Alignment with Mission:** Neural Inverse’s mission is to create tools that simplify complex tasks and enhance productivity, making this project a natural fit.
-
----
-
-## **Table of Contents**
-
-1. [What is Odoo?](#what-is-odoo)
-2. [Why Neural Inverse Developed This](#why-neural-inverse-developed-this)
-3. [Requirements](#requirements)
-4. [Tested Versions](#tested-versions)
-5. [How to Run](#how-to-run)
-   - [Prepare Your Environment](#1-prepare-your-environment)
-   - [Run the Setup](#2-run-the-setup)
-6. [Project Structure](#project-structure)
-7. [What’s Inside?](#whats-inside)
-8. [Developer Tracking Table](#developer-tracking-table)
-9. [Customization Options](#customization-options)
-10. [Accessing the Services](#accessing-the-services)
-11. [Stopping the Services](#stopping-the-services)
-12. [Troubleshooting](#troubleshooting)
-13. [Useful Links](#useful-links)
-14. [License](#license)
-15. [Contributing](#contributing)
-
----
-
 ## **Requirements**
 
 - Docker container virtualization service
@@ -164,16 +114,6 @@ All containers are configured using Docker Compose for ease of deployment and ma
 
 ---
 
-## **Developer Tracking Table**
-
-| Task ID | Developer Name      | Task Description                        | Status       |
-|---------|---------------------|------------------------------------------|--------------|
-| 001     | [Your Name Here]    | Set up Docker environment               | In Progress  |
-| 002     | [Your Name Here]    | Configure PostgreSQL and Odoo containers| Completed    |
-| 003     | [Your Name Here]    | Test Odoo and Adminer accessibility     | Pending      |
-
----
-
 ## **Customization Options**
 
 You can modify the following parameters in the `.env` file:
@@ -207,90 +147,48 @@ You can modify the following parameters in the `.env` file:
   - URL: `http://localhost:<ODOO_PORT>` (default: `http://localhost:8069`)
 
 - **Adminer Database Management:**
-
-URL: `http://localhost:<ADMINER_PORT>` (default: `http://localhost:8080`)
+  - URL: `http://localhost:<ADMINER_PORT>` (default: `http://localhost:8080`)
 
 ---
 
 ## **Stopping the Services**
 
-To stop all running containers, execute the following command:
+To stop and remove all containers, run:
 
 ```bash
 docker-compose down
 ```
 
-This will shut down and remove all containers, networks, and volumes created by the project.
-
 ---
 
 ## **Troubleshooting**
 
-Here are some common issues and their solutions:
-
-1. **Docker Service Not Running:**
-   - Error: "Docker service is not running. Please start Docker and try again."
-   - Solution: Start the Docker service using the appropriate command for your operating system.
-
-2. **Port Already in Use:**
-   - Error: "Bind for 0.0.0.0:<PORT> failed: port is already allocated."
-   - Solution: Check which process is using the port with `netstat` or `lsof` and stop it, or modify the port in the `.env` file.
-
-3. **PostgreSQL Connection Timeout:**
-   - Error: "Timed out waiting for PostgreSQL to become available."
-   - Solution: Ensure that the PostgreSQL container is running and accessible. Check the container logs with:
-     ```bash
-     docker-compose logs postgres
-     ```
-
-4. **Unable to Access Odoo:**
-   - Error: "This site can’t be reached."
-   - Solution: Verify that the Odoo container is running and the port is correctly configured in the `.env` file.
-
----
-
-## **Useful Links**
-
-- [Odoo Official Documentation](https://www.odoo.com/documentation)
-- [Docker Documentation](https://docs.docker.com/)
-- [PostgreSQL Official Documentation](https://www.postgresql.org/docs/)
-- [Adminer Official Site](https://www.adminer.org/)
+- Ensure Docker is installed and running before executing the scripts.
+- Verify that the ports configured in the `.env` file are not in use by other applications.
+- Check the logs of the Docker containers for errors:
+  ```bash
+  docker-compose logs
+  ```
+- If PostgreSQL fails to start, ensure its hostname and port configurations in `.env` match those in `docker-compose.yml`.
+- For any connection issues, verify user credentials and database names in the `.env` file.
 
 ---
 
 ## **License**
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
 ## **Contributing**
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/YourFeatureName
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add some feature"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/YourFeatureName
-   ```
-5. Open a Pull Request.
+Contributions are welcome! Feel free to submit issues or pull requests to enhance the project.
 
 ---
 
-## **Why Choose This Project?**
+### **Author**
 
-This project offers a quick and efficient way to deploy Odoo, PostgreSQL, and Adminer with minimal effort. Its simplicity ensures that:
+- Neural Inverse Open Source Initiative
 
-- Developers save time on setup.
-- Businesses can focus on customization and functionality rather than infrastructure.
-- Teams benefit from a robust, containerized environment ready for testing and production.
+Enjoy effortless ERP/CRM deployment with Odoo Simplified Setup! 🚀
 
-By automating the setup process, Neural Inverse ensures that users can leverage the full potential of Odoo without being hindered by technical complexities.
