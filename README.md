@@ -93,6 +93,15 @@ Effortlessly deploy Odoo 17.0 with PostgreSQL 16 and Adminer 4.8.1 using Docker.
 
 ---
 
+## **Project Structure**
+
+- `build_and_run.sh`: Shell script for Linux/Mac to set up and run the containers.
+- `build_and_run.bat`: Batch script for Windows to set up and run the containers.
+- `docker-compose.yml`: Defines the Docker services for Odoo, PostgreSQL, and Adminer.
+- `.env.example`: Sample environment variables configuration file.
+
+---
+
 ## **What’s Inside?**
 
 This project creates and configures the following containers:
@@ -152,6 +161,19 @@ docker-compose down
 
 ---
 
+## **Troubleshooting**
+
+- Ensure Docker is installed and running before executing the scripts.
+- Verify that the ports configured in the `.env` file are not in use by other applications.
+- Check the logs of the Docker containers for errors:
+  ```bash
+  docker-compose logs
+  ```
+- If PostgreSQL fails to start, ensure its hostname and port configurations in `.env` match those in `docker-compose.yml`.
+- For any connection issues, verify user credentials and database names in the `.env` file.
+
+---
+
 ## **License**
 
 This project is open source and available under the [MIT License](LICENSE).
@@ -169,3 +191,4 @@ Contributions are welcome! Feel free to submit issues or pull requests to enhanc
 - Neural Inverse Open Source Initiative
 
 Enjoy effortless ERP/CRM deployment with Odoo Simplified Setup! 🚀
+
