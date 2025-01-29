@@ -8,8 +8,8 @@ Welcome to the **Odoo Simplified Setup** project! We appreciate your interest in
 Start by forking the repository to your GitHub account.
 
 ```bash
-git clone https://github.com/YourOrganization/YourRepo.git
-cd YourRepo
+git clone https://github.com/OpenSrc-NeuralInverse/Odoo-Simplified-Setup.git
+cd Odoo-Simplified-Setup
 ```
 
 ### 2. Set Up Your Development Environment
@@ -78,9 +78,9 @@ docker-compose up --build
 ## Contributors
 ### Core Developers
 This project is developed by the **Neural Inverse Developer Team**:
-- **Pooja Sree A** - [LinkedIn](https://linkedin.com/in/pooja-sree-a) | [GitHub](https://github.com/poojasreea)
-- **Einiyaselvi E** - [LinkedIn](https://linkedin.com/in/einiyaselvi-e) | [GitHub](https://github.com/einiyaselvi)
-- **Sarunethra S** - [LinkedIn](https://linkedin.com/in/sarunethra-s) | [GitHub](https://github.com/sarunethras)
+- **Pooja Sree A** - [LinkedIn](https://www.linkedin.com/in/pooja-sree-arun-kumar-b93479260/)| [GitHub](https://github.com/poojasreea](https://github.com/Pooja-sree-A))
+- **Einiyaselvi E** - [LinkedIn](https://www.linkedin.com/in/einiyaselvi-elavarasan-a045b2314) | [GitHub](https://github.com/einiyaselvi)
+- **Sarunethra S** - [LinkedIn](https://www.linkedin.com/in/sarunethra/) | [GitHub](https://github.com/Sarunethara)
 
 ## Need Help?
 For questions or discussions:
