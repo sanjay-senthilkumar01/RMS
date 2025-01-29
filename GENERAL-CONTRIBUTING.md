@@ -85,7 +85,7 @@ This project is developed by the **Neural Inverse Developer Team**:
 ## Need Help?
 For questions or discussions:
 - **GitHub Issues**: [Submit an issue](https://github.com/YourOrganization/YourRepo/issues)
-- **Email Support**: support@neuralinverse.com
+- **Email Support**: OpenSrc@neuralinverse.com
 
 Thank you for contributing! 🎉
 
