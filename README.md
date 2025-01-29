@@ -2,7 +2,7 @@
 
 Welcome to the **Odoo Simplified Setup** project! This open-source initiative is designed to streamline the deployment of **Odoo 17.0**, **PostgreSQL 16**, and **Adminer 4.8.1** using Docker. It is tailored for developers and businesses seeking a quick, reliable way to implement an ERP/CRM system.
 
-This project is developed by the **Neural Inverse Developer Team** as part of the **Neural Inverse OpenSrc **, with the goal of making ERP/CRM deployment accessible and efficient for everyone.
+This project is developed by the **Neural Inverse Developer Team** as part of the **Neural Inverse OpenSrc**, with the goal of making ERP/CRM deployment accessible and efficient for everyone.
 
 ---
 
